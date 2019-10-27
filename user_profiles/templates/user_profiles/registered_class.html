@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ course_title }}</title>
+</head>
+<body>
+
+<p1>{{ course_title }}</p1>
+
+<p>
+    {% for class in registered_class %}
+    {{ class }} <br/>
+    {% empty %}
+    no registrated class
+    {% endfor %}
+</p>
+
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<form method="post" action="{% url 'user_profiles:register' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button name="submit">register</button>
+
+</form>
