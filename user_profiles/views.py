@@ -58,3 +58,7 @@ def registered_class(request, course_id):
     course_title = Course.objects.get(id=course_id).course_title
     context = {'registered_class': registered_class, 'course_title': course_title}
     return render(request, 'user_profiles/registered_class.html', context)
+
+
+def register_class(request):
+    pass
